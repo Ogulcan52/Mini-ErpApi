@@ -1,6 +1,6 @@
-# ERP (Clean-ish) — SQL Server + JWT + Katmanlı Mimari (.NET 8)
+# ERP (Clean-ish) — SQL Server + JWT + Katmanlı Mimari (.NET 9)
 
-Bu paket; SQL Server'a geçmiş, JWT kimlik doğrulama içeren ve katmanlı bir mimariyle düzenlenmiş **çalışan** bir ERP Web API örneğidir.
+Bu proje, SQL Server'a veri kaydeden, JWT kimlik doğrulama kullanan ve katmanlı mimariyle düzenlenmiş **çalışan bir ERP Web API** örneğidir.
 
 ## Katmanlar
 - **ERP.Domain**: Entity ve temel modeller
@@ -22,7 +22,7 @@ dotnet run
 4) Önce kullanıcı oluşturun:
    - `POST /api/auth/register`  (email, password)
    - `POST /api/auth/login` => **JWT** döner
-5) JWT'yi Swagger'da **Authorize** butonuna `Bearer {token}` şeklinde yapıştırın.
+5) JWT'yi Swagger'da **Authorize** butonuna `{token}` şeklinde yapıştırın.
 
 > Not: İlk çalıştırmada örnek ürün/müşteri seed'i otomatik eklenir.
 
